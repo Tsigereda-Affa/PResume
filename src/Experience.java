@@ -51,7 +51,7 @@ public class Experience extends Resume {
     }
 
     public String display() {
-        return "Experince" + "\n" + jobTitle + " \n " + company + ", " + startDate + "- " + startDate + jobDescription;
+        return "Experience" + "\n" + jobTitle + "\n" + company + ", " + startDate + "- " + startDate + "\n" + jobDescription;
 //    Experience
 //Software Developer II
 //Amtrak, June 2015 - Present
