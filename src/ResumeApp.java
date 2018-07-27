@@ -18,6 +18,7 @@ public class ResumeApp {
         String result = "";
         String resultEducation = "";
         String resultExperience = "";
+        String resultDuty = "";
         while (!userInput.equals("quit")) {
             Education e = new Education();
             System.out.println("Enter your Degree Type");
@@ -32,7 +33,7 @@ public class ResumeApp {
             System.out.println("Enter your Gratuation Year");
             e.setGratuationYear(sca.nextInt());
             System.out.println(e.getGratuationYear());
-            System.out.println("Add  or quit education");
+            System.out.println("Add  or quit");
             userInput = sca.next();
             resultEducation += "\n" + e.getDegreeType() + "in" + e.getMajor() + "\n" + e.getUniversityName() + "," + e.getGratuationYear();
 
@@ -67,65 +68,71 @@ public class ResumeApp {
 //      dutyList.add(x.getJobDescription());
 //        for (int i=0; i<dutyList.size();i++){
 //            print(dutyList.get(i));
-//        }
-            System.out.println("Add or end");
-            userInput = sca.next();
-            resultExperience += "\n" + x.getJobTitle() + "\n" + x.getCompany() + "," + x.getStartDate() + "-" + x.getEndDate() + "\n" + "Duty 1" + x.getJobDescription();
-            System.out.println(resultExperience);
-            //      print(e.display());
+           // while (!userInput.equals("stop")) {
+                //System.out.println("Enter job description");
+//                x.setJobDescription(sca.next());
+//                System.out.println(x.getJobDescription());
+//                resultDuty += "\n" + x.getJobTitle();
+//                System.out.println("Add or stop");
+//                userInput = sca.next();
+               System.out.println("Add or end");
+               userInput = sca.next();
+                resultExperience += "\n" + x.getJobTitle() + "\n" + x.getCompany() + "," + x.getStartDate() + "-" + x.getEndDate() + "\n" + "Duty " + x.getJobDescription();
+                System.out.println(resultExperience);
+                //      print(e.display());
 //            Experience
 //Software Developer II
 //Amtrak, June 2015 - Present
 //- Duty 1, The work experience description goes here
 //- Duty 2, The work experience description goes here
 
-            System.out.println(x.display());
-            //resultExperience+= "\n" + x.getJobTitle() + "\n" + x.getCompany() + "\n" + x.getStartDate() + "," + x.getJobDescription() ;
-            //   print(resultEducation);
+                System.out.println(x.display());
+                //resultExperience+= "\n" + x.getJobTitle() + "\n" + x.getCompany() + "\n" + x.getStartDate() + "," + x.getJobDescription() ;
+                //   print(resultEducation);
 
-        }
-        while (!userInput.equals("quit")) {
-            Skill s = new Skill();
-            System.out.println("Enter your skill");
-            s.setSkillName(sca.next());
-            System.out.println(s.getSkillName());
-            System.out.println("Enter your proficiency");
-            s.setRating(sca.next());
-            System.out.println(s.getRating());
-            System.out.println("Add skill or quit ");
-            userInput = sca.next();
-            result += "\n" + s.getSkillName() + ", " + s.getRating();
-            System.out.println(result);
-            // print(s.display());
-            //Skills
-            //Java, Proficient
-            //HTML/CSS, Proficient
-            //SQL Database, Familiar
+            }
+            while (!userInput.equals("quit")) {
+                Skill s = new Skill();
+                System.out.println("Enter your skill");
+                s.setSkillName(sca.next());
+                System.out.println(s.getSkillName());
+                System.out.println("Enter your proficiency");
+                s.setRating(sca.next());
+                System.out.println(s.getRating());
+                System.out.println("Add skill or quit ");
+                userInput = sca.next();
+                result += "\n" + s.getSkillName() + ", " + s.getRating();
+                System.out.println(result);
+                // print(s.display());
+                //Skills
+                //Java, Proficient
+                //HTML/CSS, Proficient
+                //SQL Database, Familiar
 
 //    ArrayList<String> skill = new ArrayList<>();
-            //skill.add("Feben");
-            //names.add("Feben");
-            //names.add("Feben");
-            //        //Method #1 : Iterate using for loop
-            //        System.out.println("Using for loop: ");
-            //        for (int i = 0; i < names.size(); i++) {
-            //            System.out.println(names.get(i));
-            //        }
+                //skill.add("Feben");
+                //names.add("Feben");
+                //names.add("Feben");
+                //        //Method #1 : Iterate using for loop
+                //        System.out.println("Using for loop: ");
+                //        for (int i = 0; i < names.size(); i++) {
+                //            System.out.println(names.get(i));
+                //        }
 
 // final print
-            System.out.println(r.textDisplay());
-            System.out.println("    Education ");
-            System.out.println(resultEducation);
-            //print(e.display());
-            System.out.println("     Experience");
-            System.out.println(resultExperience);
-            // print(x.display());
-            System.out.println("     Skills");
-            System.out.println(result);
-        }
+                System.out.println(r.textDisplay());
+                System.out.println("    Education ");
+                System.out.println(resultEducation);
+                //print(e.display());
+                System.out.println("     Experience");
+                System.out.println(resultExperience);
+                // print(x.display());
+                System.out.println("     Skills");
+                System.out.println(result);
+            }
 //            private static void print (String s){
 //                System.out.println(s);
 //            }
-    }
+        }
 
-}
+    }
