@@ -41,7 +41,7 @@ public class Education extends Resume {
     }
 
     public String display() {
-        return  "Education" + "\n" + degreeType + " in " + major + ", " + "\n"+ universityName + ", " + gratuationYear;
+        return  "     Education" + "\n" + degreeType + " in " + major + ", " + "\n"+ universityName + ", " + gratuationYear;
 //        BS in Psychology,
 //                University of Maryland, 2002
 

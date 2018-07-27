@@ -1,6 +1,6 @@
 public class Experience extends Resume {
     public Experience() {
-        System.out.println("         Exprince");
+        System.out.println("         Experience");
     }
 
     private String jobTitle;
@@ -51,7 +51,7 @@ public class Experience extends Resume {
     }
 
     public String display() {
-        return "Experience" + "\n" + jobTitle + "\n" + company + ", " + startDate + "- " + startDate + "\n" + jobDescription;
+        return "     Experience" + "\n" + jobTitle + "\n" + company + ", " + startDate + "- " + endDate + "\n" + jobDescription;
 //    Experience
 //Software Developer II
 //Amtrak, June 2015 - Present
